@@ -8,7 +8,7 @@
  *
  * MyBB Version: 1.8
  *
- * Plugin Version: 1.0
+ * Plugin Version: 1.1
  * 
  */
 
@@ -19,7 +19,7 @@ $l['usercpnewsbars_desc'] = 'Adds newsbars to the usercp page of your forum.';
 $l['usercpnewsbars_web'] = 'http://community.mybb.com/user-6029.html';
 $l['usercpnewsbars_auth'] = 'Vintagedaddyo';
 $l['usercpnewsbars_authsite'] = 'http://community.mybb.com/user-6029.html';
-$l['usercpnewsbars_ver'] = '1.0';
+$l['usercpnewsbars_ver'] = '1.1';
 $l['usercpnewsbars_compat'] = '18*';
 
 // Setting Group
@@ -61,5 +61,20 @@ $l['usercpnewsbars_description_setting_6'] = 'Enter the text you want to display
 
 $l['usercpnewsbars_title_setting_7'] = 'Do you want to enable UserCP Newsbars Notice 2?';
 $l['usercpnewsbars_description_setting_7'] = 'If you set this option to yes, Notice 2 will be active on your usercp.';
+
+// Setting 8
+
+$l['usercpnewsbars_title_setting_8'] = 'CSS for Newsbars Alert';
+$l['usercpnewsbars_description_setting_8'] = 'This controls the styling for the alert.';
+
+// Setting 9
+
+$l['usercpnewsbars_title_setting_9'] = 'CSS for Newsbars Notice 1';
+$l['usercpnewsbars_description_setting_9'] = 'This controls the styling for the notice1.';
+
+// Setting 10
+
+$l['usercpnewsbars_title_setting_10'] = 'CSS for Newsbars Notice 2';
+$l['usercpnewsbars_description_setting_10'] = 'This controls the styling for notice2.';
 
 ?>
