@@ -133,7 +133,7 @@ function usercpnewsbars_activate()
         'gid' => intval($gid)
     );
 
-        $usercpnewsbars_setting_8 = array(
+    $usercpnewsbars_setting_8 = array(
         'sid' => '0',
         'name' => 'usercpnewsbars_css_input_1',
         'title' => $lang->usercpnewsbars_title_setting_8,
@@ -239,7 +239,7 @@ function usercpnewsbars_activate()
 }',
         'disporder' => '9',
         'gid' => intval($gid)
-    );  
+    );
 
     $db->insert_query('settings', $usercpnewsbars_setting_1);
     $db->insert_query('settings', $usercpnewsbars_setting_2);
@@ -308,7 +308,7 @@ function usercpnewsbars_deactivate()
     global $db;
 
     $db->query("DELETE FROM " . TABLE_PREFIX . "settings WHERE name IN ('usercpnewsbars_enable_usercp')");
-    
+
     $db->query("DELETE FROM " . TABLE_PREFIX . "settings WHERE name IN ('usercpnewsbars_enable_input_1')");
     $db->query("DELETE FROM " . TABLE_PREFIX . "settings WHERE name IN ('usercpnewsbars_enable_input_2')");
     $db->query("DELETE FROM " . TABLE_PREFIX . "settings WHERE name IN ('usercpnewsbars_enable_input_3')");
@@ -320,15 +320,11 @@ function usercpnewsbars_deactivate()
     $db->query("DELETE FROM " . TABLE_PREFIX . "settings WHERE name IN ('usercpnewsbars_css_input_1')");
     $db->query("DELETE FROM " . TABLE_PREFIX . "settings WHERE name IN ('usercpnewsbars_css_input_2')");
     $db->query("DELETE FROM " . TABLE_PREFIX . "settings WHERE name IN ('usercpnewsbars_css_input_3')");
-
     $db->query("DELETE FROM " . TABLE_PREFIX . "settinggroups WHERE name='usercpnewsbars'");
-
     $db->delete_query("templates", "title = 'usercpnewsbars_1'");
     $db->delete_query("templates", "title = 'usercpnewsbars_2'");
     $db->delete_query("templates", "title = 'usercpnewsbars_3'");
-
     rebuild_settings();
-
     include MYBB_ROOT . "/inc/adminfunctions_templates.php";
 
     // deactivate on usercp
